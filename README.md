@@ -105,11 +105,42 @@ img2.png | часть земли | 0 |
 2) Блок обработки сформированных признаков. Состоит из двух двуноправленных LSTM слоёв
 3) Формирование 
 
+**Архитектура модели**
 <div align="center">
 
 ![image](https://github.com/user-attachments/assets/d271ae0b-3c34-4373-aa42-c162dfb60f7c)
 
 </div>
+
+Модель обучалась 20 эпох на 70 000 изображений.
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/0e8c3ce1-7058-44f0-b939-429592fd9bb3)
+
+</div>
+
+Минимальная ошибка - 6.36. Доля ошибочных символов(CER метрика) состявляет - 2.4 %
+
+После 14 эпохи модель вышла на плато, поэтому дальнейшее обучение не имеет смысла
+
+
+# **Результаты работы модели**
+Распознавание символов (текст слева - исходный текст, текст справа - предсказание модели)
+
+<div align="center">
+
+![image](https://github.com/user-attachments/assets/aa20806a-c53c-4281-8d7e-cdc49387cd98)
+
+![image](https://github.com/user-attachments/assets/e2aaf405-23a9-4d44-a8c2-822b756c1480)
+
+![image](https://github.com/user-attachments/assets/920053d7-7d83-43db-a7a6-b816fefe862b)
+
+![image](https://github.com/user-attachments/assets/13b901bc-d26f-4b43-a08c-2498485f9bc0)
+
+</div>
+
+
 
 
 
